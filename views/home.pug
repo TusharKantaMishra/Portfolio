@@ -1,0 +1,27 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/index.js
+block content
+    section#introSection
+        div 
+            div.head Hi, I am 
+                span Tushar
+            div.mid PASSIONATE IN
+                div 
+                    |Frontend Development
+            span#element
+            div.body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste nesciunt at velit eligendi quas error libero, incidunt voluptas atque.
+        div.img
+            img(src="/static/img/bg.png", alt="")
+    section#endSection 
+        div.contact
+            img(src="/static/img/fb.png", alt="")
+            img(src="/static/img/insta.png", alt="")
+            img(src="/static/img/twi.png", alt="")
+            

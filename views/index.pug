@@ -1,0 +1,37 @@
+doctype html 
+html 
+    head 
+        title Tushar-Portfolio_Site
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar
+
+            div.frst
+                |Tushar's Porttfolio
+            div.links
+                ul 
+                    li #[a(href="/") Home]
+                    li #[a(href="/") About]
+                    li #[a(href="/") Experiences]
+                    li #[a(href="/") Contacts]
+        section#introSection
+            div 
+                div.head Hi, I am 
+                    span Tushar
+                div.mid PASSIONATE IN
+                    div 
+                        |Frontend Development
+                span#element
+                div.body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste nesciunt at velit eligendi quas error libero, incidunt voluptas atque.
+            div.img
+                img(src="/static/img/bg.png", alt="")
+        section#endSection 
+            div.contact
+                img(src="/static/img/fb.png", alt="")
+                img(src="/static/img/insta.png", alt="")
+                img(src="/static/img/twi.png", alt="")
+        footer.footer
+            |Copyright &copy 2023 Portfolio_site.com | All  rights reserved.
+    script 
+        include ../static/index.js

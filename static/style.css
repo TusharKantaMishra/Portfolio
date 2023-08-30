@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lumanosimo&family=Poppins:wght@400;700&family=Raleway:wght@300&family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(46, 2, 88);
+}
+#navbar {
+    background-color: #350068;
+    padding: 9px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navbar .frst{
+    font-size: 1.52rem;
+    cursor: pointer;
+}
+.links ul {
+    display: flex;
+    justify-content: center;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+}
+.links ul li a:hover{
+    color: rgb(177, 201, 222);
+    font-size: .98rem;
+}
+#introSection{
+    justify-content: space-around;
+    margin:23px;
+    display: flex;
+    min-width: 500px;
+}
+#introSection .head .mid .body{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#introSection .head{  
+    font-size: 3rem;
+    padding: 36px;
+}
+#introSection span{
+    color: #dbb6ff;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+#introSection .mid {
+    padding: 0px 100px;
+    align-items: center;
+    font-size: .7rem;
+    color: blanchedalmond;
+    font-family: 'Space Grotesk', sans-serif;
+}
+#introSection .mid div{
+    display: block;
+    color:#0ea8d6;
+    font-family: 'Lumanosimo', cursive;
+    font-size: 2rem;
+    padding: 20px;
+}
+#introSection .body{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #e778f3;
+}
+.img img{
+    float: right;
+    align-items: center;
+    height:400px;
+    width: 470px;
+}
+#endSection .contact {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: 9px 20px;
+    font-size: .7rem;
+}
+.contact img{
+    padding: 0px 18px;
+    border-radius: 10px;
+}
+.contact img:hover{
+    cursor: pointer;
+    border: 1px solid rgb(46, 2, 88);
+}
+.contact img:hover::before{
+    opacity: 0.55;
+}
+#footer{
+    display: flex;
+    background-color: black;
+    color: wheat;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+}

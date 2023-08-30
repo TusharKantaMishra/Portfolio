@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleContacts.css
+block content
+    div.container
+        h1 Contact Me 
+        form(action="/contacts", method="post", class="myForm")
+            input(type="text", class="myInput", name="name", placeholder="Enter your name")
+            input(type="text", class="myInput", name="age", placeholder="Enter your age")
+            input(type="text", class="myInput", name="mobile", placeholder="Enter your mobile")
+            input(type="text", class="myInput", name="address", placeholder="Enter your adress")
+            input(type="text", class="myInput", name="more", placeholder="Write more about you")
+            button(class="btn")
+                | Submit
+        div.image1
+            img(src="/static/img/1.png", alt="")
